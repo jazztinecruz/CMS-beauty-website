@@ -47,7 +47,7 @@ const Home: NextPage = ({ items, categories } :any) => {
       <div className='grid grid-rows-[auto,1fr] lg:grid-cols-[auto,1fr] gap-6'>
 
         {/* Categories */}
-        <div className='lg:hidden overflow-hidden snap-x'>
+        <div className='lg:hidden overflow-hidden overflow-x-scroll'>
           <div className='grid grid-flow-col gap-4 items-center'>
             <div>
               <button className='w-full text-left py-4 px-6 hover:bg-cyan-500 hover:text-white transition-all duration-700 cursor-pointer' onClick={() => handleFilteredItems('All')}>All</button>
