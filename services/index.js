@@ -12,6 +12,9 @@ export const getItems = async () => {
             }
             price
             id
+            itemPhoto {
+              url
+            }
           }
         }
       }
