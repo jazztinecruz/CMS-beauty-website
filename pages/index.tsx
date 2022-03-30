@@ -34,7 +34,7 @@ const Home: NextPage = ({ items, categories } :any) => {
   return (
     <div className='h-screen grid grid-rows-[auto,1fr] gap-5'>
       <Head>
-        <title>Create Next App</title>
+        <title>CMS Beauty e-commerce</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
@@ -44,7 +44,7 @@ const Home: NextPage = ({ items, categories } :any) => {
       </div>
 
       {/* content */}
-      <div className='grid grid-rows-[auto,1fr] lg:grid-cols-[auto,1fr] gap-6'>
+      <div className='grid grid-rows-[auto,1fr] lg:grid-cols-[auto,1fr] gap-6 px-6'>
 
         {/* Categories */}
         <div className='lg:hidden overflow-hidden overflow-x-scroll'>
@@ -73,7 +73,7 @@ const Home: NextPage = ({ items, categories } :any) => {
           </div>
         </div>
 
-        <div className='grid grid-rows-[auto,1fr] gap-10 px-4'>
+        <div className='grid grid-rows-[auto,1fr] gap-10'>
           {/* Search Input */}
           <input type='search' className='py-3 px-4 w-full md:w-96 outline-none border-none shadow-md rounded-md ml-auto' placeholder='Search Here...' onChange={(e) => setInput(e.target.value)} value={input} />
 
